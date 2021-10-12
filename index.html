@@ -1,12 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="FR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Booki: Marseille</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+    </style>
+
+    <script src="https://kit.fontawesome.com/92571ff0d6.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+
+<header> 
+    <div class="menu"> 
+        <img class="menu_item" src="Source\images\logo\Booki.png" alt="Logo Booki">
+            
+        <nav class="menu_item">
+            <ul>
+                <li>
+                    <a href="#Hébergements">Hébergements</a>
+                </li>
+                <li>
+                    <a href="#Activités">Activités</a>
+                </li>
+            </ul>
+        </nav>
+    </div>   
+</header>    
+
+<main>
+
+    <div> 
+        <div class="titre_section_recherche">
+            <h2 class="titre_section">Trouvez votre hébergement pour des vacances de rêve</h2>
+            <p class="sous-titre_section">En plein centre ville ou en pleine nature</p>
+        </div>
+
+        <form method="post" action="traitement.php" class="recherche">
+            <div id="input_group_container">
+                <span class="input_group_text" id="basic-addon1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                    </svg>
+                </span>
+                <input type="text" id="texte_rechercher" value="Marseille, France">
+                <input type="submit" id="click_rechercher" value="Rechercher">
+            </div>
+            </form>
+
+            <div class="filtres_recherche">
+                <h4>Filtres</h4>
+                <ul class="filtre_button">
+                    <li class="filtre_bouton"> <i class="fas fa-money-bill-wave"></i> Economique </li>
+                    <li class="filtre_bouton"> <i class="fas fa-child"></i> Familial </li>
+                    <li class="filtre_bouton"> <i class="fas fa-heart"></i> Romantique </li>
+                    <li class="filtre_bouton"> <i class="fas fa-dog"></i> Animaux acceptés </li>
+                </ul>
+
+                <!-- <div class="item_filtres">
+                    <div class="filtre" id="économique">
+                        <div class="icone_filtre">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h4 class="titre_filtre">Economique</h4>
+                    </div>
+
+                    <div class="filtre" id="familial">
+                        <div class="icone_filtre">
+                            <i class="fas fa-child"></i>    
+                        </div>
+                        <h4 class="titre_filtre">Familial</h4>
+                    </div>
+
+                    <div class="filtre" id="romantique">
+                        <div class="icone_filtre">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4 class="titre_filtre">Romantique</h4>
+                    </div>
+
+                    <div class="filtre" id="animaux acceptés">
+                        <div class="icone_filtre">
+                            <i class="fas fa-dog"></i>
+                        </div>
+                        <h4 class="titre_filtre">Animaux acceptés</h4>
+                    </div>
+                </div>
+            </div> -->
+        
+            <div class="info_recherche">
+                    
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" style="color: blue;" class="bi bi-info-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                </svg>
+                    
+                <p> Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+    </div>
+
+    <div id="Hébergements">
+        <h2 class="titre_section">Hébergements à Marseille</h2>
+        <div class="grille_hébergements">
+            <div class="grille_item">
+                <img src="" alt="">
+                <div>
+                    <h4 class="titre_item"></h4>
+                    <h6 class="prix_nuit"></h6>
+                    <i class="stars"></i>
+                </div>
+            </div>
+        </div>
+        <button id="button_more">Afficher plus</button>
+    </div>
+   
+    <div id="Activités">
+        <h2 class="titre_section">Activités à Marseille</h2>
+        <div class="grille_activités">
+            <div class="grille_item">
+                <img src="" alt="">
+                <h4 class="titre_item"></h4>
+            </div>
+        </div>
+    </div>
+</main>
+
+<aside>
+    <h2 class="titre_section">Les plus populaires</h2>
+    <i></i>
+    <div class="grille_activité">
+        <div class="grille_item">
+            <img src="" alt="">
+            <div>
+                <h4 class="titre_item"></h4>
+                <h6 class="prix_nuit"></h6>
+                <i class="stars"></i>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<footer>
+<div class="foot_container">
+    <div class="foot_list">
+        <ul class="foot_list">
+            <li>
+                <a href="#">A propos</a>
+            </li>
+
+            <li>
+                <a href="#">Fonctionnement du site</a>
+            </li>
+
+            <li>
+                <a href="#">Conditions générales de vente</a>
+            </li>
+
+            <li>
+                <a href="#">Données et confidentialités</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="foot_list">
+        <ul class="foot_list">
+            <li>
+                <a href="#">Nos Hébergements</a>
+            </li>
+
+            <li>
+                <a href="#">Charte qualité</a>
+            </li>
+
+            <li>
+                <a href="#">Soumettre votre hôtel</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="foot_list">
+        <ul class="foot_list">
+            <li>
+                <a href="#">Assitances</a>
+            </li>
+        
+            <li>
+                <a href="#"> Centre d'aide</a>
+            </li>
+
+            <li>
+                <a href="#">Nous contacter</a>
+            </li>
+        </ul>
+    </div>
+</div> 
+</footer>
+
 </body>
+
 </html>

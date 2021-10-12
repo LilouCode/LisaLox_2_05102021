@@ -1,0 +1,236 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+}
+
+/*      HEADER      */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+
+
+.menu img { /*logo en-tête*/
+    width: 95px;
+    height: 45px;
+    margin-top: 40px;
+}
+
+.menu ul{
+    display: flex;
+    margin-top: 0px;
+}
+        
+.menu li { 
+    list-style-type: none; /*pas de puce*/
+}   
+    
+.menu a { /*dimension des liens */  
+    display: block; /* Transformation en block */
+    min-width: 150px; /*Largeur minimale des liens*/
+    min-height: fit-content;
+    color: black;
+    text-decoration: none; /*pas de surlignement*/
+    padding-top: 40px;
+    padding-right: 15px;
+}
+    
+.menu a:hover{ 
+    border-top: solid #0065FC;  
+    color: #0065FC; 
+}
+
+@media all and (max-device-width: 992px) 
+{
+    
+    .menu {
+       width: auto;
+    }
+    
+}
+
+@media screen and (max-device-width: 768px) {
+   
+    .menu { 
+        flex-direction: column;
+        width: auto;
+        margin-left: 5px;
+        margin-right: 2px;
+    }
+
+    .menu a:hover{
+        border-top: none;
+        border-bottom: solid #0065FC;  
+    }
+
+}
+        
+
+
+/*      MAIN         */
+
+
+main {
+    margin-left: 40px;
+    margin-right: 25%;
+}
+
+/* Zone de recherche*/
+
+/*Je veux coller mon sous-titre au titre et je n'y arrive pas.*/
+.filtre_bouton ul{
+    display: flex;
+    margin-top: 0px;
+}
+        
+.filtre_bouton li { 
+    list-style-type: none; /*pas de puce*/
+}
+
+.titre_section_recherche p{
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+/*Input group - c'est 1 box pour 3 éléments*/
+#input_group_container{
+    display: block;
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+    max-width: fit-content;
+}   
+#texte_rechercher{
+    border-color: transparent;
+}
+#click_rechercher{
+    box-sizing: content-box;
+    background-color: #0065FC;
+    color: white;
+    border-color: transparent;
+}
+#basic-addon1{
+    background-color:#F2F2F2;
+}
+
+.click_rechercher {
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+/*Filtres*/
+.filtres_recherche {
+    display: flex;
+}
+
+.item_filtres {
+    display: flex;
+    align-content: space-between;
+}
+
+.filtre{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+    border: 2px solid #F2F2F2;
+    border-radius: 90px;
+    
+}
+
+.icone_filtre {
+    margin-right: 20px;
+    align-self: center;
+    float: left;
+    padding: 15px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 150px;
+}
+
+.titre_filtre{
+padding-right: 10px;
+}
+
+.info_recherche {
+display: flex;
+}
+.info_recherche svg {
+    align-self: center;
+}
+.info_recherche p{
+    font-size: 12px;
+    font-weight: lighter;
+    padding-left: 10px;
+}
+
+/*ASIDE*/
+aside{
+    width: 24%;
+    float: right;
+}
+
+/* FOOTER*/
+footer {
+    background-color: #F2F2F2;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    clear: right;
+}
+
+.foot_container {
+    display: flex;
+    margin-left: 20px;
+}
+
+.foot_list ul{
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;    
+}
+
+.foot_list li {
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+.foot_list li:first-child {
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.foot_list a{
+    text-decoration: none;
+    color: black;
+}
+
+@media all and (max-device-width: 992px) 
+{
+    
+    .footer_container {
+       width: auto;
+    }
+    
+}
+
+@media screen and (max-device-width: 768px) {
+   
+    .foot_container { 
+        flex-direction: column;
+        width: auto;
+    }
+
+    .foot_list ul {
+        flex-direction: column;
+        flex-wrap: wrap; 
+        width: fit-content;
+    }
+
+}
