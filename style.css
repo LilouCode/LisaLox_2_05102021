@@ -57,12 +57,24 @@ body {
 }
 
 @media screen and (max-device-width: 768px) {
-   
+.menu ul{
+    padding-inline-start: 40px;
+}   
     .menu { 
         flex-direction: column;
         width: auto;
         margin-left: 5px;
         margin-right: 2px;
+        align-items: center;
+    }
+
+    .menu img{
+        margin-top: 10px;
+    }
+
+    .menu a{
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .menu a:hover{
@@ -89,6 +101,7 @@ main {
     font-size: 14px;
     font-weight: lighter;
 }
+
 /*Form*/
 .form {
 display: flex;
@@ -126,13 +139,32 @@ background-color: #0065FC;
 }
 
 /*Filtres*/
-.filtre_bouton ul{
+.filtres_recherche{
     display: flex;
-    margin-top: 0px;
+    max-width: auto;
+}
+.filtres_recherche h4{
+    align-self: center;
+}
+.filtres {
+    display: flex;
+    margin-left: 5px;
+    padding: 10px;
 }
         
-.filtre_bouton li { 
-    list-style-type: none; /*pas de puce*/
+.filtre { 
+    list-style-type: none;
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+    text-align: right;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+.filtre i{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    padding: 10px;
+    border-radius: 100px;
 }
 
 /* .filtres_recherche {
