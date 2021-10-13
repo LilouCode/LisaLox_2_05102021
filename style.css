@@ -171,9 +171,16 @@ background-color: #0065FC;
     padding: 10px;
     border-radius: 100px;
 }
+.filtres li:hover{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    font-weight: bolder;
+
+}
 
 .info_recherche {
 display: flex;
+margin-top: 0px;
 }
 .info_recherche i{
     margin-right: 5px;
@@ -187,10 +194,11 @@ display: flex;
     
 
 }
-.info_recherche p{
+.info_recherche h6{
     font-size: 12px;
     font-weight: lighter;
     padding-left: 10px;
+    margin-top: 0px;
 }
 
 /* SECTION HEBERGEMENTS + Paramètres grilles en Flexbox */ 
