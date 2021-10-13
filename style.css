@@ -96,8 +96,13 @@ main {
 
 /* Zone de recherche*/
 
-.titre_section_recherche p{
-    padding-left: 10px;
+.titre_section_recherche h2{
+    margin-bottom: 5px;
+}
+.titre_section_recherche h6{
+    margin-top: 0px;
+    margin-bottom: 15px;
+    padding-left: 4px;
     font-size: 14px;
     font-weight: lighter;
 }
@@ -154,7 +159,7 @@ background-color: #0065FC;
         
 .filtre { 
     list-style-type: none;
-    border: 1px solid #F2F2F2;
+    border: 2px solid #F2F2F2;
     border-radius: 20px;
     text-align: right;
     padding-right: 10px;
@@ -167,49 +172,40 @@ background-color: #0065FC;
     border-radius: 100px;
 }
 
-/* .filtres_recherche {
-    display: flex;
-}
-
-.item_filtres {
-    display: flex;
-    align-content: space-between;
-}
-
-.filtre{
-    display: flex;
-    justify-content: space-around;
-    margin-left: 40px;
-    border: 2px solid #F2F2F2;
-    border-radius: 90px;
-    
-}
-
-.icone_filtre {
-    margin-right: 20px;
-    align-self: center;
-    float: left;
-    padding: 15px;
-    color: #0065FC;
-    background-color: #DEEBFF;
-    border-radius: 150px;
-}
-
-.titre_filtre{
-padding-right: 10px;
-} */
-
 .info_recherche {
 display: flex;
 }
-.info_recherche svg {
-    align-self: center;
+.info_recherche i{
+    margin-right: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border: 1px solid #F2F2F2;
+    color: #0065FC;
+    border-radius: 100px;
+    
+
 }
 .info_recherche p{
     font-size: 12px;
     font-weight: lighter;
     padding-left: 10px;
 }
+
+/* SECTION HEBERGEMENTS + Paramètres grilles en Flexbox */ 
+
+#box_section{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.grille_item img{
+    width: 200px;
+}
+
 
 /*ASIDE*/
 aside{
