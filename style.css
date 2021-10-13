@@ -36,8 +36,10 @@ body {
     min-height: fit-content;
     color: black;
     text-decoration: none; /*pas de surlignement*/
+    text-align: center;
     padding-top: 40px;
     padding-right: 15px;
+    border-top: solid transparent;
 }
     
 .menu a:hover{ 
@@ -82,7 +84,48 @@ main {
 
 /* Zone de recherche*/
 
-/*Je veux coller mon sous-titre au titre et je n'y arrive pas.*/
+.titre_section_recherche p{
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+/*Form*/
+.form {
+display: flex;
+border: 1px solid #F2F2F2;
+border-radius: 20px;
+max-width: fit-content;
+}
+
+#icone_form  {
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+border-right: transparent;
+border-top: transparent;
+border-bottom: transparent;
+background-color: #F2F2F2;
+padding: 10px;
+}
+
+#texte_rechercher {
+border: transparent;
+padding-left: 10px;
+background-color: white;
+}
+
+#click_rechercher {
+padding: 10px;
+border: 1px solid #0065FC;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 20px;
+border-left: transparent;
+border-top: #0065FC;
+border-bottom: #0065FC;
+color: white;
+background-color: #0065FC;
+}
+
+/*Filtres*/
 .filtre_bouton ul{
     display: flex;
     margin-top: 0px;
@@ -92,41 +135,7 @@ main {
     list-style-type: none; /*pas de puce*/
 }
 
-.titre_section_recherche p{
-    padding-left: 10px;
-    font-size: 14px;
-    font-weight: lighter;
-}
-/*Input group - c'est 1 box pour 3 éléments*/
-#input_group_container{
-    display: block;
-    border: 1px solid #F2F2F2;
-    border-radius: 20px;
-    max-width: fit-content;
-}   
-#texte_rechercher{
-    border-color: transparent;
-}
-#click_rechercher{
-    box-sizing: content-box;
-    background-color: #0065FC;
-    color: white;
-    border-color: transparent;
-}
-#basic-addon1{
-    background-color:#F2F2F2;
-}
-
-.click_rechercher {
-    background-color: #0065FC;
-    color: white;
-    border: none;
-    max-width: fit-content;
-    max-height: fit-content;
-}
-
-/*Filtres*/
-.filtres_recherche {
+/* .filtres_recherche {
     display: flex;
 }
 
@@ -156,7 +165,7 @@ main {
 
 .titre_filtre{
 padding-right: 10px;
-}
+} */
 
 .info_recherche {
 display: flex;
