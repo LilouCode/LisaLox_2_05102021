@@ -1,6 +1,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     background-color: white;
+    width: auto;
 }
 
 /*      HEADER      */
@@ -47,9 +48,10 @@ body {
     color: #0065FC; 
 }
 
-@media all and (max-device-width: 992px) 
-{
-    
+@media all and (max-device-width: 992px) {
+    .body{
+        width: auto;
+    }
     .menu {
        width: auto;
     }
@@ -57,7 +59,10 @@ body {
 }
 
 @media screen and (max-device-width: 768px) {
-.menu ul{
+    .body{
+        width: auto;
+    }
+    .menu ul{
     padding-inline-start: 40px;
 }   
     .menu { 
@@ -210,10 +215,49 @@ margin-top: 0px;
     padding-bottom: 20px;
     padding-left: 20px;
 }
-.grille_item img{
-    width: 200px;
+.grille_item{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    width: 250px;
+    margin: 30px;
+    box-shadow: 1px 1px 12px #555;
 }
-
+.grille_item img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover; /*pour garder le ratio*/
+    width: 240px;
+    height: 120px;
+    align-self: center;
+    margin-top: 5px;
+}
+.infos_item{
+    display: flex;
+    padding-left: 15px;
+    flex-direction: column;
+}
+.titre_item{
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+.prix_nuit{
+    margin-top: 2px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.stars{
+    margin-bottom: 10px;
+}
+.stars i{
+    color: #0065FC;
+    font-size: 10px;
+}
+#far{
+    color: #F2F2F2;
+}
 
 /*ASIDE*/
 aside{
