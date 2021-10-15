@@ -60,7 +60,7 @@ body {
 
 @media screen and (max-device-width: 768px) {
     .body{
-        width: auto;
+        width: 100%;
     }
     .menu ul{
     padding-inline-start: 40px;
@@ -120,7 +120,7 @@ border-radius: 20px;
 max-width: fit-content;
 }
 
-#icone_form  {
+#local  {
 border-top-left-radius: 20px;
 border-bottom-left-radius: 20px;
 border-right: transparent;
@@ -146,6 +146,40 @@ border-top: #0065FC;
 border-bottom: #0065FC;
 color: white;
 background-color: #0065FC;
+}
+
+#loupe{
+visibility: hidden;
+padding: 10px;
+border: 1px solid #0065FC;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 20px;
+border-left: transparent;
+border-top: #0065FC;
+border-bottom: #0065FC;
+color: white;
+background-color: #0065FC;
+}
+
+@media screen and (max-device-width: 768px){
+    #local{
+    order: 1;
+    }
+    
+    #texte_rechercher{
+    order: 2;
+    }
+
+    #click_rechercher {
+        order: 4;
+        visibility: hidden;
+    }
+
+    #loupe{
+        visibility: visible;
+        order: 3;
+    }
+    
 }
 
 /*Filtres*/
@@ -283,8 +317,9 @@ margin-top: 0px;
     align-self: flex-end;
     border: none;
     padding: 0px;
-    padding-left: 20px;
     margin-top: 7px;
+    margin-left: 20px;
+    background-color: transparent;
 }
 
 /* LES PLUS POPULAIRES*/
@@ -318,6 +353,68 @@ margin-top: 0px;
     align-self: center;
     margin: 5px;
 }
+
+.infos_item_pop{
+    display: flex;
+    padding-left: 15px;
+    flex-direction: column;
+}
+
+.stars_pop{
+    justify-self: flex-end ;
+    margin-bottom: 10px;
+}
+.stars_pop i{
+    color: #0065FC;
+    font-size: 10px;
+}
+
+/* CHANGEMENT DE SECTION */
+/*ACTIVITES*/
+
+#Hébergements{
+    display: flex;
+    width: max-content;
+}
+
+#Activ {
+    background-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-right: 40px;
+    width: max-content
+    height: fit-content;
+
+}
+
+.grille_activités{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.grille_item_act{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 25px;
+    margin: 10px;
+    width: 230px;
+    box-shadow: 1px 1px 12px #555;
+}
+.grille_item_act img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover; /*pour garder le ratio*/
+    width: 230px;
+    height: 100px;
+}
+.grille_item_act h4{
+    padding: 10px;
+}
+
 
 /* FOOTER*/
 footer {
@@ -373,7 +470,7 @@ footer {
     .foot_list ul {
         flex-direction: column;
         flex-wrap: wrap; 
-        width: fit-content;
+        width: max-content;
     }
 
 }

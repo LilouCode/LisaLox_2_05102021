@@ -42,13 +42,10 @@
 
         <form method="post" action="traitement.php" class="recherche">
             <div class="form">
-                <span class="class= item_form" id="icone_form">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                    </svg>
-                </span>
+                <i id="local" class="fas fa-map-marker-alt"></i>
                 <input class= "item_form" type="text" id="texte_rechercher" value="Marseille, France">
                 <input class="item_form" type="submit" id="click_rechercher" value="Rechercher">
+                <i id="loupe" class="fas fa-search"></i>
             </div>
         </form>
 
@@ -182,7 +179,7 @@
                     <div class="infos_item">
                         <h4 class="titre_item">Hôtel Le soleil du matin</h4>
                         <h6 class="prix_nuit">Nuit à partir de <strong>128€</strong></h6>
-                        <div class="stars">
+                        <div class="stars_pop">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -195,9 +192,9 @@
                 <div class="grille_item_pop" id="Au_coeur_de_l_eau_Chambre_d_hôtes">
                     <img class="image_item" src="Source\images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au_coeur_de_l_eau_Chambre_d_hôtes">
                     <div class="infos_item">
-                        <h4 class="titre_item">Au coeur de l'eau Chambres d'hôtes</h4>
+                        <h4 class="titre_item_pop">Au coeur de l'eau Chambres d'hôtes</h4>
                         <h6 class="prix_nuit">Nuit à partir de <strong>71€</strong></h6>
-                        <div class="stars">
+                        <div class="stars_pop">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -209,7 +206,7 @@
 
                 <div class="grille_item_pop" id="Hôtel_tout_bleu_et_Blanc">
                     <img class="image_item" src="Source\images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel_tout_bleu_et_Blanc">
-                    <div class="infos_item">
+                    <div class="infos_item_pop">
                         <h4 class="titre_item">Hôtel Tout bleu et Blanc</h4>
                         <h6 class="prix_nuit">Nuit à partir de <strong>68€</strong></h6>
                         <div class="stars">
@@ -225,14 +222,17 @@
         </div>
     </section>
    
-    <section>
-        <div id="Activités">
+    <section id="Activités">
+        <div class="box_section" id="Activ">
             <h2 class="titre_section">Activités à Marseille</h2>
+            
             <div class="grille_activités">
-                <div class="grille_item">
-                    <img src="" alt="">
-                    <h4 class="titre_item"></h4>
+              
+                <div class="grille_item_act" id="">
+                    <img class="image_item_act" src="Source\images\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux_port">
+                    <h4 class="titre_item">Vieux port</h4>
                 </div>
+
             </div>
         </div>
     </section>
