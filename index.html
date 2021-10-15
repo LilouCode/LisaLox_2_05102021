@@ -41,10 +41,17 @@
         </div>
 
         <form method="post" action="traitement.php" class="recherche">
-            <div class="form">
+            <div class="form" id="form_standart">
                 <i id="local" class="fas fa-map-marker-alt"></i>
                 <input class= "item_form" type="text" id="texte_rechercher" value="Marseille, France">
                 <input class="item_form" type="submit" id="click_rechercher" value="Rechercher">
+            </div>
+        </form>
+
+        <form method="post" action="traitement.php" class="recherche">
+            <div class="form" id="form_mobile">
+                <i id="local" class="fas fa-map-marker-alt"></i>
+                <input class= "item_form" type="text" id="texte_rechercher" value="Marseille, France">
                 <i id="loupe" class="fas fa-search"></i>
             </div>
         </form>
