@@ -367,10 +367,17 @@ margin-top: 0px;
     margin: 5px;
 }
 
+
 .infos_item_pop{
+    margin-top: 5px;
+    margin-bottom: 5px;
     display: flex;
     padding-left: 15px;
     flex-direction: column;
+    justify-content: space-between;
+}
+.infos_item_pop h6{
+    margin-top: 10px;
 }
 
 .stars_pop{
