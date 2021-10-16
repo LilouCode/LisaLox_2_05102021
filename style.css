@@ -98,6 +98,9 @@ main {
     margin-left: 40px;
     margin-right: 25%;
 }
+.titre_section{
+    font-size: 20px;
+}
 .titre_section_recherche{
     display: flex;
     flex-direction: column;
@@ -108,6 +111,7 @@ main {
 
 .titre_section_recherche h2{
     margin-bottom: 5px;
+    font-size: 24px;
 }
 .titre_section_recherche h6{
     margin-top: 0px;
@@ -126,8 +130,7 @@ max-width: fit-content;
 }
 
 #form_mobile {
-    visibility: hidden;
-    display: flex;
+    display: none;
     border: 1px solid #F2F2F2;
     border-radius: 20px;
     max-width: fit-content;
@@ -177,10 +180,11 @@ background-color: #0065FC;
 
 @media screen and (max-device-width: 768px){
 #form_standart{
-    visibility: hidden;
+    display: none;
 }
     
 #form_mobile{
+    display: flex;
     visibility: visible;
 }
 
@@ -403,7 +407,7 @@ margin-top: 0px;
     padding-bottom: 20px;
     padding-left: 20px;
     margin-right: 40px;
-    width: max-content
+    width: max-content;
     height: fit-content;
 
 }
