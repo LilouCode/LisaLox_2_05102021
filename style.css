@@ -361,6 +361,20 @@ margin-top: 0px;
 .grille_item_pop:hover{
     box-shadow: 4px 4px 12px #555;
 }
+
+.grille_item_pop:hover img{
+    width: 130px;
+    margin-right: 0px;
+}
+.grille_item:hover h4{
+    font-size: 16px;
+}
+.grille_item:hover h6{
+    font-size: 10px;
+}
+.grille_item_pop:hover i{
+    font-size: 12px;
+}
 .grille_item_pop img{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -393,13 +407,28 @@ margin-top: 0px;
     font-size: 10px;
 }
 
+
+/*MEDIA QUERIES ----> SECTION HEBERGEMENTS */
+
+@media all and (max-device-width: 992px) {
+    #Hébergements{
+        width:auto;
+    }
+}
+@media screen and (max-device-width: 768px){
+    
+    #Hébergements{
+        width: 320px;
+        flex-direction: column;
+    }
+    .grille_hébergements{
+        flex-direction: column;
+    }
+
+}
+
 /* CHANGEMENT DE SECTION */
 /*ACTIVITES*/
-
-#Hébergements{
-    display: flex;
-    width: max-content;
-}
 
 #Activ {
     background-color: transparent;
@@ -446,17 +475,20 @@ footer {
     padding-top: 10px;
     padding-bottom: 0px;
     clear: right;
+    width: 100%;
 }
 
 .foot_container {
     display: flex;
-    margin-left: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .foot_list ul{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    margin-right: 200px;    
+    justify-content: space-around;    
 }
 
 .foot_list li {
@@ -495,6 +527,7 @@ footer {
    
     .foot_container { 
         flex-direction: column;
+        flex-wrap: wrap;
         width: auto;
     }
 
