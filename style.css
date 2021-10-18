@@ -250,6 +250,12 @@ margin-top: 0px;
     margin-top: 0px;
 }
 
+/* SECTIONS Hébergements + Activités */
+.lien_card{
+    text-decoration: none;
+    color: black;
+}
+
 /* SECTION HEBERGEMENTS + Paramètres grilles en Flexbox */ 
 
 #Hébergements{
