@@ -295,7 +295,15 @@ background-color: #0065FC;
     display: flex;
     flex-direction: column;
 }
-
+.titre_section_avec_icone{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-right: 10px;
+}
+#icone_pop{
+    align-self: center;
+}
 .grille_item_pop{
     display: flex;
     flex-direction: row;
