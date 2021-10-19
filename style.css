@@ -313,6 +313,8 @@ background-color: #0065FC;
     justify-content: space-between;
     padding: 10px;
     margin-right: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 #icone_pop{
     align-self: center;
@@ -326,6 +328,7 @@ background-color: #0065FC;
     border-radius: 25px;
     margin: 10px;
     width: 270px;
+    padding-bottom: 2px;
     box-shadow: 1px 1px 12px #555;
 }
 
@@ -444,11 +447,12 @@ background-color: #0065FC;
 }
 
 #Fort_de_Pomègues img{
-    height: 145px;
+    height: 130px;
 }
 
 #Îles_du_Frioul img{
-    height: 90px;
+    height: 105px;
+    object-position: top;
 }
 
 
@@ -457,11 +461,12 @@ background-color: #0065FC;
 }
 
 #Notre_Dame_de_la_Garde img{
-    height: 90px;
+    height: 105px;
+    object-position: top;
 }
 
 #Parc_Longchamps img{
-    height: 145px;
+    height: 130px;
 }
 
 
@@ -566,14 +571,15 @@ footer {
     }
 
     /*header mobile*/
+    .header{
+        width: auto;
+    }
     .menu ul{
     padding-inline-start: 40px;
     }   
     .menu { 
         flex-direction: column;
         width: auto;
-        margin-left: 5px;
-        margin-right: 2px;
         align-items: center;
     }
 
