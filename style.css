@@ -65,6 +65,11 @@ main {
 
 /* Zone de recherche*/
 
+#Recherche{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
 .titre_section_recherche h2{
     margin-bottom: 5px;
     font-size: 24px;
@@ -73,28 +78,29 @@ main {
     margin-top: 0px;
     margin-bottom: 15px;
     padding-left: 4px;
-    font-size: 14px;
-    font-weight: lighter;
+    font-size: 16px;
+    font-weight: normal;
 }
 
 /*Form*/
 #form_standart {
 display: flex;
 border: 1px solid #F2F2F2;
-border-radius: 20px;
+border-radius: 10px;
 max-width: fit-content;
+margin-bottom: 14px;
 }
 
 #form_mobile {
     display: none;
     border: 1px solid #F2F2F2;
-    border-radius: 20px;
+    border-radius: 10px;
     max-width: fit-content;
 }
 
 #local  {
-border-top-left-radius: 20px;
-border-bottom-left-radius: 20px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
 border-right: transparent;
 border-top: transparent;
 border-bottom: transparent;
@@ -111,8 +117,8 @@ background-color: white;
 #click_rechercher {
 padding: 10px;
 border: 1px solid #0065FC;
-border-bottom-right-radius: 20px;
-border-top-right-radius: 20px;
+border-bottom-right-radius: 10px;
+border-top-right-radius: 10px;
 border-left: transparent;
 border-top: #0065FC;
 border-bottom: #0065FC;
@@ -125,8 +131,8 @@ box-shadow: 1px 1px 2px #0065FC;
 #loupe{
 padding: 10px;
 border: 1px solid #0065FC;
-border-bottom-right-radius: 20px;
-border-top-right-radius: 20px;
+border-bottom-right-radius: 10px;
+border-top-right-radius: 10px;
 border-left: transparent;
 border-top: #0065FC;
 border-bottom: #0065FC;
@@ -138,10 +144,12 @@ background-color: #0065FC;
 .filtres_recherche{
     display: flex;
     flex-wrap: wrap;
-    max-width: auto;
+    max-width: max-content;
 }
 .filtres_recherche h4{
     align-self: center;
+    margin-left: 5px;
+    margin-right: 20px;
 }
 .filtres {
     display: flex;
@@ -155,14 +163,19 @@ background-color: #0065FC;
     border: 2px solid #F2F2F2;
     border-radius: 20px;
     text-align: right;
-    padding-right: 10px;
-    margin-right: 10px;
+    padding-right: 15px;
+    margin-right: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
 }
 .filtre i{
     background-color: #DEEBFF;
     color: #0065FC;
     padding: 10px;
     border-radius: 100px;
+    box-shadow: 1px 1px 1px #DEEBFF;
+    margin-right: 5px;
 }
 .filtres li:hover{
     background-color: #DEEBFF;
@@ -188,8 +201,8 @@ background-color: #0065FC;
 
 }
 .info_recherche h6{
-    font-size: 12px;
-    font-weight: lighter;
+    font-size: 14px;
+    font-weight: normal;
     padding-left: 10px;
     margin-top: 0px;
 }
