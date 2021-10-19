@@ -531,8 +531,26 @@ footer {
     /* section hébergements tablette */
     #Hébergements{
         width:auto;
+        flex-direction: column;
     }
-    
+    #HM{
+        display: flex;
+        flex-direction: column;
+    }
+    .grille_hébergements{
+        display: flex;    
+    }
+    #Pop{
+        display: flex;
+        width: max-content;
+        margin-left: 0px;
+        background-color: white;
+    }
+    #grille_pop{
+        display: flex;
+        flex-direction: row;
+        margin-left: 5px;
+    }
     /*footer tablette*/
     .footer_container {
        width: auto;
@@ -544,7 +562,7 @@ footer {
 
 @media all and (max-device-width: 768px) {
     .body{
-        width: 100%;
+        width: auto;
     }
 
     /*header mobile*/
@@ -588,9 +606,7 @@ footer {
         width: 320px;
         flex-direction: column;
     }
-    .grille_hébergements{
-        flex-direction: column;
-    }
+    
     
     /*footer mobile*/
     .foot_container { 
