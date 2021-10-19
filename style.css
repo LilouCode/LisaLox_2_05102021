@@ -469,7 +469,7 @@ margin-top: 0px;
     border-radius: 25px;
     margin-right: 40px;
     margin-top: 40px;
-    width: 250px;
+    width: 260px;
     box-shadow: 1px 1px 12px #555;
 }
 
@@ -477,7 +477,7 @@ margin-top: 0px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover; /*pour garder le ratio*/
-    width: 250px;
+    width: 260px;
     height: 100px;
 }
 .grille_item_act h4{
@@ -489,28 +489,28 @@ margin-top: 0px;
 
 
 #Vieux_port img{
-    height: 300px;
+    height: 320px;
 }
 
 #Fort_de_Pomègues img{
-    height: 145px;
+    height: 150px;
 }
 
 #Îles_du_Frioul img{
-    height: 70px;
+    height: 90px;
 }
 
 
 #Parc_National_des_Calanques img{
-    height: 300px;
+    height: 320px;
 }
 
 #Notre_Dame_de_la_Garde img{
-    height: 70px;
+    height: 90px;
 }
 
 #Parc_Longchamps img{
-    height: 145px;
+    height: 150px;
 }
 
 
