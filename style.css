@@ -49,18 +49,12 @@ body {
 
 /*      MAIN         */
 
-
-main {
-    margin-left: 40px;
-    margin-right: 25%;
-}
 .titre_section{
     font-size: 20px;
 }
 .titre_section_recherche{
     display: flex;
     flex-direction: column;
-    width: max-content;   
 }
 
 /* Zone de recherche*/
@@ -68,7 +62,6 @@ main {
 #Recherche{
     display: flex;
     flex-direction: column;
-    width: max-content;
 }
 .titre_section_recherche h2{
     margin-bottom: 5px;
@@ -144,8 +137,8 @@ background-color: #0065FC;
 .filtres_recherche{
     display: flex;
     flex-wrap: wrap;
-    max-width: max-content;
 }
+
 .filtres_recherche h4{
     align-self: center;
     margin-left: 5px;
@@ -217,7 +210,6 @@ background-color: #0065FC;
 
 #Hébergements{
     display: flex;
-    width: max-content;
 }
 
 .box_section{
@@ -227,9 +219,10 @@ background-color: #0065FC;
     padding-bottom: 20px;
     padding-left: 20px;
     margin-right: 40px;
-    width: 775px;
     height: fit-content;
-
+}
+#HM{
+    width: 65%;
 }
 
 .grille_hébergements{
@@ -303,7 +296,7 @@ background-color: #0065FC;
 
 #Pop{
     margin-left: 30px;
-    width: 300px;
+    width: 32%;
     height: max-content;
     display: flex;
     flex-direction: column;
@@ -322,8 +315,7 @@ background-color: #0065FC;
 .grille_item_pop{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-content: center;
+    width: 75%;
     background-color: white;
     border-radius: 25px;
     margin: 10px;
@@ -567,7 +559,7 @@ footer {
 
 @media all and (max-device-width: 768px) {
     .body{
-        width: auto;
+        width: 100%;
     }
 
     /*header mobile*/
