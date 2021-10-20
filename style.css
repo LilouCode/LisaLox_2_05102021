@@ -381,28 +381,28 @@ background-color: #0065FC;
 
 #Activités{
     margin-left: 0px;
-    width: 1075px;
+    width: 100%;
 }
 
 #Activ {
+    display: flex;
+    flex-direction: column;
     background-color: transparent;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-left: 0px;
     margin-right: 40px;
-    width: max-content;
+    width: 100%;
     height: fit-content;
     padding-left: 0px;
 }
 
 .grille_activités{
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     margin-left: 0px;
     margin-right: 0px;
     height: 500px;
-    width: fit-content;
 }
 .grille_item_act{
     display: flex;
@@ -432,7 +432,9 @@ background-color: #0065FC;
     font-size: 13px;
     font-weight: bold;
 }
-
+.act_part{
+    width: 25%;
+}
 
 #Vieux_port img{
     height: 320px;
