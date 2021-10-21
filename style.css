@@ -1,8 +1,8 @@
 body {
     font-family: 'Raleway', sans-serif;
     background-color: white;
-    margin-right: 20px;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 /*      HEADER      */
@@ -25,7 +25,7 @@ body {
     display: flex;
     margin-top: 0px;
 }
-        
+    
 .menu li { 
     list-style-type: none; /*pas de puce*/
 }   
@@ -383,58 +383,49 @@ background-color: #0065FC;
     width: 100%;
 }
 
-#box_activités {
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-left: 0px;
-    margin-right: 40px;
-    width: auto;
-    padding-left: 0px;
+#box_activités{
+    padding: 0px;
 }
-
 .grille_activités{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding: 0px;
-    justify-content: stretch;
+    width: 100%;
 }
-.grille_item_act{
+
+.Item_act{
     display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: 25px;
-    margin-top: 40px;
-    width: fit-content;
     box-shadow: 1px 1px 12px #555;
 }
-.grille_item_act:hover{
-    box-shadow: 4px 4px 12px #555;
-}
 
-.grille_item_act img{
+.Item_act img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover; /*pour garder le ratio*/
     width: 260px;
     height: 100px;
-}
-.grille_item_act h4{
+} 
+
+.Item_act h4{
     padding: 14px;
     margin-top: 0px;
     font-size: 13px;
     font-weight: bold;
 }
 
-
-.act_part{
-    width: 25%;
+.Item_grid :first-child{
+    margin-left: 0px;
+}
+.Item_grid{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between; 
+    flex-wrap: wrap;
+    min-width: 25%;
 }
 
 
@@ -521,12 +512,12 @@ footer {
 @media all and (max-device-width: 992px) {
     
     .body{
-        width: auto;
+        width: 100%;
     }
 
     /* header tablette*/
     .menu {
-        width: auto;
+        width: 100%;
     }
     
     /* section hébergements tablette */
@@ -537,21 +528,44 @@ footer {
     #HM{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
     }
     .grille_hébergements{
-        display: flex;    
+        display: flex;
+        margin-left: 0px ;    
     }
+    .grille_hébergements a{
+        width: 30%;
+        margin-left: 0%;
+        margin-right: 3%;
+    }
+
     #Pop{
         display: flex;
-        width: max-content;
+        width: 100%;
         margin-left: 0px;
         background-color: white;
     }
     #grille_pop{
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         margin-left: 5px;
     }
+
+    /* Section activités Tablette*/
+    
+    .grille_activités{
+        flex-direction: column;
+    }
+    .act_part{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
     /*footer tablette*/
     .footer_container {
        width: auto;
@@ -568,8 +582,11 @@ footer {
 
     /*header mobile*/
     .header{
-        width: auto;
+        width: 100%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
+
     .menu ul{
     padding-inline-start: 40px;
     }   
@@ -604,11 +621,62 @@ footer {
     }
 
     /* section hébergements mobile */
+
     #Hébergements{
-        width: 320px;
         flex-direction: column;
     }
+
+    #HM{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 2%;
+        padding: 0px;
+        background-color: white;
+    }
+    .grille_hébergements{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px ;
+        align-self: center;   
+        width: 100%; 
+    }
+    .grille_hébergements a{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .grille_item{
+        width: 100%;
+    }
+    .grille_item img{
+        width: 97%;
+        object-position: 10% 53%;
+    }
+    .lien_card{
+        width: 100%;
+    }
+    #Pop{
+        order: 1;
+        display: flex;
+        width: 100%;
+        margin-left: 0px;
+        background-color: #F2F2F2;
+    }
+    #grille_pop{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        align-self: center;
+    }
     
+    /* section Activités mobile*/
+
+    .grille_activités{
+        flex-direction: column;
+    }
     
     /*footer mobile*/
     .foot_container { 
