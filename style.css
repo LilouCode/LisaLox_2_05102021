@@ -297,14 +297,15 @@ background-color: #0065FC;
     display: flex;
     flex-direction: column;
 }
+#Pop a{
+    width: 80%;
+}
+
 .titre_section_avec_icone{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    margin-right: 10px;
-    padding-bottom: 0px;
-    padding-top: 0px;
 }
+
 #icone_pop{
     align-self: center;
 }
@@ -313,7 +314,7 @@ background-color: #0065FC;
     flex-direction: row;
     background-color: white;
     border-radius: 25px;
-    margin: 10px;
+    margin: 3.4%;
     width: 98%;
     padding-bottom: 2px;
     box-shadow: 1px 1px 12px #555;
@@ -323,23 +324,28 @@ background-color: #0065FC;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     object-fit: cover; /*pour garder le ratio*/
-    width: 100px;
+    width: 110px;
     height: 120px;
     align-self: center;
     margin: 5px;
 }
 
-
 .infos_item_pop{
     margin-top: 5px;
     margin-bottom: 5px;
+    width: 70%;
     display: flex;
-    padding-left: 15px;
+    padding-left: 2%;
     flex-direction: column;
     justify-content: space-between;
 }
+.infos_item_pop_text{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
 .infos_item_pop h6{
-    margin-top: 10px;
+    margin-top: 3%;
 }
 
 .stars_pop{
