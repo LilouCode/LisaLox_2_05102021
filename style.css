@@ -311,11 +311,10 @@ background-color: #0065FC;
 .grille_item_pop{
     display: flex;
     flex-direction: row;
-    width: 75%;
     background-color: white;
     border-radius: 25px;
     margin: 10px;
-    width: 270px;
+    width: 98%;
     padding-bottom: 2px;
     box-shadow: 1px 1px 12px #555;
 }
