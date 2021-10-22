@@ -215,10 +215,7 @@ background-color: #0065FC;
 .box_section{
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    margin-right: 40px;
+    padding: 2%;
     height: fit-content;
 }
 #HM{
@@ -384,11 +381,12 @@ background-color: #0065FC;
 }
 
 #box_activités{
-    padding: 0px;
+    background-color: white;
 }
 .grille_activités{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -398,6 +396,7 @@ background-color: #0065FC;
     background-color: white;
     border-radius: 25px;
     box-shadow: 1px 1px 12px #555;
+    margin-bottom: 10%;
 }
 
 .Item_act img{
@@ -415,17 +414,17 @@ background-color: #0065FC;
     font-weight: bold;
 }
 
-.Item_grid :first-child{
+.Item_grid:first-child{
     margin-left: 0px;
 }
 .Item_grid{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     align-content: space-between; 
     flex-wrap: wrap;
-    min-width: 25%;
+    min-width: 20%;
 }
 
 
