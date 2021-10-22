@@ -190,9 +190,8 @@ background-color: #0065FC;
     border: 1px solid #F2F2F2;
     color: #0065FC;
     border-radius: 100px;
-    
-
 }
+
 .info_recherche h6{
     font-size: 14px;
     font-weight: normal;
@@ -282,10 +281,11 @@ background-color: #0065FC;
 #button_more{
     align-self: flex-end;
     border: none;
-    padding: 0px;
-    margin-top: 7px;
-    margin-left: 20px;
+    padding: 2%;
+    margin-top: 2%;
     background-color: transparent;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 /* LES PLUS POPULAIRES*/
@@ -318,10 +318,6 @@ background-color: #0065FC;
     width: 270px;
     padding-bottom: 2px;
     box-shadow: 1px 1px 12px #555;
-}
-
-.grille_item:hover i{
-    font-size: 8px;
 }
 
 .grille_item_pop img{
