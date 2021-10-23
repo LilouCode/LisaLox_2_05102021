@@ -173,8 +173,7 @@ background-color: #0065FC;
 .filtres li:hover{
     background-color: #DEEBFF;
     color: #0065FC;
-    font-weight: bolder;
-
+    box-shadow: 1px 3px 2px #555;
 }
 
 .info_recherche {
@@ -500,13 +499,12 @@ footer {
     
     /* section hébergements tablette */
     #Hébergements{
-        width:auto;
         flex-direction: column;
     }
     #HM{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 70%;
         margin: 0px;
         padding: 0px;
     }
@@ -538,6 +536,7 @@ footer {
     .grille_activités{
         flex-direction: column;
     }
+
     .act_part{
         width: auto;
         display: flex;
