@@ -77,60 +77,53 @@ body {
 
 /*Form*/
 #form_standart {
-display: flex;
-border: 1px solid #F2F2F2;
-border-radius: 10px;
-max-width: fit-content;
-margin-bottom: 14px;
+    display: flex;
+    border-radius: 10px;
+    max-width: fit-content;
+    margin-bottom: 14px;
 }
 
 #form_mobile {
     display: none;
-    border: 1px solid #F2F2F2;
     border-radius: 10px;
     max-width: fit-content;
 }
 
 #local  {
-border-top-left-radius: 10px;
-border-bottom-left-radius: 10px;
-border-right: transparent;
-border-top: transparent;
-border-bottom: transparent;
-background-color: #F2F2F2;
-padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #F2F2F2;
+    border-right: transparent;
+    background-color: #F2F2F2;
+    padding: 10px;
 }
 
 #texte_rechercher {
-border: transparent;
-padding-left: 10px;
-background-color: white;
+    border: 1px solid #F2F2F2;
+    border-left: transparent;
+    border-right: transparent;
+    padding-left: 10px;
+    background-color: white;
 }
 
 #click_rechercher {
-padding: 10px;
-border: 1px solid #0065FC;
-border-bottom-right-radius: 10px;
-border-top-right-radius: 10px;
-border-left: transparent;
-border-top: #0065FC;
-border-bottom: #0065FC;
-color: white;
-background-color: #0065FC;
-box-shadow: 1px 1px 2px #0065FC;
-
+    padding: 10px;
+    border: 1px solid #0065FC;
+    border-left: transparent;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    background-color: #0065FC;
 }
 
 #loupe{
-padding: 10px;
-border: 1px solid #0065FC;
-border-bottom-right-radius: 10px;
-border-top-right-radius: 10px;
-border-left: transparent;
-border-top: #0065FC;
-border-bottom: #0065FC;
-color: white;
-background-color: #0065FC;
+    padding: 10px;
+    border: 1px solid #0065FC;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-left: transparent;
+    color: white;
+    background-color: #0065FC;
 }
 
 /*Filtres*/
@@ -169,6 +162,9 @@ background-color: #0065FC;
     border-radius: 100px;
     box-shadow: 1px 1px 1px #DEEBFF;
     margin-right: 5px;
+}
+.filtre:hover{
+    border-color: #DEEBFF;
 }
 .filtres li:hover{
     background-color: #DEEBFF;
