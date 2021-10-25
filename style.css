@@ -244,6 +244,10 @@ body {
     align-self: center;
     margin-top: 5px;
 }
+.pic_item{
+width: 220px;
+align-self: center;
+}
 
 .infos_item{
     display: flex;
@@ -313,6 +317,11 @@ body {
     width: 98%;
     padding-bottom: 2px;
     box-shadow: 1px 1px 12px #555;
+}
+
+.pic_item_pop{
+    width: 120px;
+    height: 128px;
 }
 
 .grille_item_pop img{
