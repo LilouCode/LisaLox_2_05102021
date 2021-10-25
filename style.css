@@ -1,12 +1,15 @@
 body {
     font-family: 'Raleway', sans-serif;
     background-color: white;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0px;
 }
 
 /*      HEADER      */
 
+.header{
+    margin-left: 20px;
+    margin-right: 20px;
+}
 .menu {
     display: flex;
     justify-content: space-between;
@@ -48,6 +51,10 @@ body {
 }
 
 /*      MAIN         */
+.main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
 .titre_section{
     font-size: 20px;
@@ -447,6 +454,8 @@ footer {
     padding-bottom: 0px;
     clear: right;
     width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .foot_container {
@@ -532,15 +541,10 @@ footer {
 }
 
 
-/*Smartphones*/
+/*******************Smartphones************************************/ 
 
-@media only screen and (max-device-width: 768px) {
-    .body {
-        width: 100%;
-        background-color: black;
-    }
+@media all and (max-device-width: 768px) {
 
-    /*header mobile*/
     .header{
         width: 100%;
         margin-left: 0%;
@@ -555,8 +559,14 @@ footer {
     .menu { 
         flex-direction: column;
         align-items: center;
+        margin: 2%;
     }
-
+    .menu_item{
+        width: 100%;
+    }
+    .menu_item picture{
+        width: fit-content;
+    }
     .menu a{
         margin-left: 0px;
         margin-right: 0px;
