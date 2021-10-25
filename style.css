@@ -555,6 +555,7 @@ footer {
     .menu ul{
     padding-inline-start: 0px;
     width: 100%;
+    margin: 0%;
     }   
     .menu { 
         flex-direction: column;
@@ -564,8 +565,8 @@ footer {
     .menu_item{
         width: 100%;
     }
-    .menu_item picture{
-        width: fit-content;
+    #pic_logo{
+        width: auto;
     }
     .menu a{
         margin-left: 0px;
@@ -577,7 +578,21 @@ footer {
         border-bottom: solid #0065FC;  
     }
     
-    /* section recherche mobile*/
+    /***** section recherche mobile*/
+    #Recherche{
+        margin: 4%;
+    }
+
+    .titre_section {
+        width: 80%;
+    }
+    .titre_section_recherche h2 {
+        font-size: 20px;
+    }
+    .titre_section_recherche h6{
+        font-size: 14px;
+    }
+
     #form_standart{
         display: none;
     }
@@ -585,8 +600,36 @@ footer {
     #form_mobile{
         display: flex;
         visibility: visible;
+        width: 100%;
     }
-
+    #Recherche form{
+        align-self: center;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+    .text_form{
+        font-size: 16px;
+    }
+    .filtres_recherche h4{
+        margin-top: 5%;
+        margin-bottom: 0%;
+    }
+    .filtres{
+        margin-left: 0%;
+    }
+    .filtre{
+        margin-right: 2%;
+        margin-bottom: 2%;
+    }
+    .info_recherche {
+        width: 80%;
+    }
+    .info_recherche h6{
+        font-size: 12px;
+    }
+    .info_recherche i{
+        float: left;
+    }
     /* section hébergements mobile */
 
     #Hébergements{
