@@ -89,7 +89,7 @@ body {
     max-width: fit-content;
 }
 
-#local  {
+.fa-map-marker-alt  {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border: 1px solid #F2F2F2;
@@ -98,7 +98,7 @@ body {
     padding: 10px;
 }
 
-#texte_rechercher {
+.text_form {
     border: 1px solid #F2F2F2;
     border-left: transparent;
     border-right: transparent;
@@ -273,9 +273,6 @@ align-self: center;
     color: #0065FC;
     font-size: 10px;
 }
-#far{
-    color: #F2F2F2;
-}
 
 #button_more{
     align-self: flex-end;
@@ -415,7 +412,6 @@ align-self: center;
     min-width: 20%;
 }
 
-
 #Vieux_port img{
     height: 320px;
 }
@@ -492,17 +488,14 @@ footer {
 /*Tablettes*/
 
 @media all and (max-device-width: 992px) {
-    
     .body{
-        width: 100%;
+        background-color: palevioletred;
     }
 
-    /* header tablette*/
     .menu {
         width: 100%;
     }
     
-    /* section hébergements tablette */
     #Hébergements{
         flex-direction: column;
     }
@@ -536,50 +529,32 @@ footer {
         margin-left: 5px;
     }
 
-    /* Section activités Tablette*/
-    
-    .grille_activités{
-        flex-direction: column;
-    }
-
-    .act_part{
-        width: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    /*footer tablette*/
-    .footer_container {
-       width: auto;
-    }
-    
 }
+
 
 /*Smartphones*/
 
-@media all and (max-device-width: 768px) {
-    .body{
+@media only screen and (max-device-width: 768px) {
+    .body {
         width: 100%;
+        background-color: black;
     }
 
     /*header mobile*/
     .header{
         width: 100%;
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 0%;
     }
 
     .menu ul{
-    padding-inline-start: 40px;
+    padding-inline-start: 0px;
+    width: 100%;
     }   
     .menu { 
         flex-direction: column;
-        width: auto;
         align-items: center;
-    }
-
-    .menu img{
-        margin-top: 10px;
     }
 
     .menu a{
@@ -636,15 +611,16 @@ footer {
         width: 97%;
         object-position: 10% 53%;
     }
-    .lien_card{
-        width: 100%;
-    }
+
     #Pop{
         order: 1;
         display: flex;
-        width: 100%;
+        width: 92%;
         margin-left: 0px;
         background-color: #F2F2F2;
+    }
+    #Pop a{
+        width: 83%;
     }
     #grille_pop{
         display: flex;
@@ -659,7 +635,9 @@ footer {
     .grille_activités{
         flex-direction: column;
     }
-    
+    .Item_grid{
+        flex-wrap: nowrap;
+    }
     /*footer mobile*/
     .foot_container { 
         flex-direction: column;
