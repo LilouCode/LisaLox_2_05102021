@@ -634,6 +634,8 @@ footer {
 
     #Hébergements{
         flex-direction: column;
+        width: 100%;
+        padding: 0%;
     }
 
     #HM{
@@ -641,7 +643,7 @@ footer {
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin: 2%;
+        margin: 0%;
         padding: 0px;
         background-color: white;
     }
@@ -668,9 +670,14 @@ footer {
     #Pop{
         order: 1;
         display: flex;
-        width: 92%;
+        width: 100%;
+        padding: 5%;
         margin-left: 0px;
         background-color: #F2F2F2;
+        border-radius: 0px;
+    }
+    .titre_section_avec_icone{
+        width: 80%;
     }
     #Pop a{
         width: 83%;
