@@ -5,14 +5,14 @@ body {
 
 /*      HEADER      */
 header{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 .menu {
     display: flex;
     justify-content: space-between;
-    margin-top: 0px;
-    margin-bottom: 60px;
+    margin-top: 0%;
+    margin-bottom: 3%;
 }
 
 
@@ -24,7 +24,7 @@ header{
 
 .menu ul{
     display: flex;
-    margin-top: 0px;
+    margin-top: 0%;
 }
     
 .menu li { 
@@ -50,8 +50,8 @@ header{
 
 /*      MAIN         */
 .main{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .titre_section{
@@ -70,13 +70,13 @@ header{
     margin-left: 1%;
 }
 .titre_section_recherche h2{
-    margin-bottom: 5px;
+    margin-bottom: 0.5%;
     font-size: 24px;
 }
 .titre_section_recherche h6{
-    margin-top: 0px;
-    margin-bottom: 15px;
-    padding-left: 4px;
+    margin-top: 0%;
+    margin-bottom: 2%;
+    padding-left: 0%;
     font-size: 16px;
     font-weight: normal;
 }
@@ -86,7 +86,7 @@ header{
     display: flex;
     border-radius: 10px;
     max-width: fit-content;
-    margin-bottom: 14px;
+    margin-bottom: 1%;
 }
 
 #form_mobile {
@@ -140,8 +140,7 @@ header{
 
 .filtres_recherche h4{
     align-self: center;
-    margin-left: 5px;
-    margin-right: 20px;
+    margin-right: 2%;
 }
 .filtres {
     display: flex;
@@ -196,7 +195,7 @@ header{
 .info_recherche h6{
     font-size: 14px;
     font-weight: normal;
-    padding-left: 10px;
+    padding-left: 0%;
     margin-top: 0px;
 }
 
@@ -226,8 +225,8 @@ header{
 .grille_hébergements{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 .grille_item{
@@ -514,11 +513,13 @@ footer {
         order: 2;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 96%;
         margin: 0px;
+        margin-top: 2%;
         padding: 2%;
-        border-radius: 0px;
+        border-radius: 20px;
         background-color: white;
+        box-shadow: 1px 2px 3px #555;
     }
     .grille_hébergements{
         display: flex;
@@ -533,8 +534,6 @@ footer {
         align-self: flex-start;
         margin-top: 3%;
         padding: 2%;
-        border-radius: 20px;
-        box-shadow: 2px 5px 2px #F2F2F2;
         font-size: 12px;
     }
 
@@ -544,6 +543,7 @@ footer {
         width: 100%;
         margin-left: 0px;
         background-color: #F2F2F2;
+        border-radius: 0px;
     }
     .titre_section_avec_icone{
         width: 22%;
@@ -558,12 +558,12 @@ footer {
         justify-content: flex-start;
     }
     .grille_item_pop img{
-        border-top-left-radius: 57px;
-        border-bottom-left-radius: 171px;
-    }
-    .grille_item_pop img:hover{
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
+    }
+    .grille_item_pop img:hover{
+        border-top-left-radius: 57px;
+        border-bottom-left-radius: 171px;
     }
 
     /*ACTIVITES*/
