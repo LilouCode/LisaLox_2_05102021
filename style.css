@@ -587,10 +587,11 @@ footer {
         width: 80%;
     }
     .titre_section_recherche h2 {
-        font-size: 20px;
+        font-size: 19px;
     }
     .titre_section_recherche h6{
         font-size: 14px;
+        margin-left: -1%;
     }
 
     #form_standart{
@@ -642,8 +643,8 @@ footer {
         order: 2;
         display: flex;
         flex-direction: column;
-        width: 100%;
-        margin: 0%;
+        width: 89%;
+        margin: 3%;
         padding: 0px;
         background-color: white;
     }
@@ -666,7 +667,19 @@ footer {
         width: 97%;
         object-position: 10% 53%;
     }
+    .pic_item{
+        width: 96%;
+        padding: 2%;
+    }
+    .grille_item img{
+        width: 100%;
+        margin-top: 0%;
+        height: 111px;
+    }
 
+    #button_more{
+        align-self: flex-start;
+    }
     #Pop{
         order: 1;
         display: flex;
@@ -697,18 +710,61 @@ footer {
     }
     .Item_grid{
         flex-wrap: nowrap;
+        width: 100%;
+    }
+    .lien_card{
+        width: 97%;
+    }
+    .pic_item_act{
+        width: 100%;
+    }
+    
+    .pic_item_act img{
+        width: 100%;
+    }
+    #Vieux_port img{
+        height: 111px;
+    }
+    #Parc_National_des_Calanques img{
+        height: 111px;
+    }
+    #Fort_de_Pomègues img {
+        height: 111px;
+    }
+    #Îles_du_Frioul img{
+        height: 111px;
+    }
+    #Notre_Dame_de_la_Garde img{
+        height: 111px;
+    }
+    #Parc_Longchamps img {
+        height: 111px;
     }
     /*footer mobile*/
+    .footer {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+
+    }
     .foot_container { 
         flex-direction: column;
         flex-wrap: wrap;
-        width: auto;
+        width: 100%;
+        margin: 0%;
     }
-
+    .foot_list{
+        margin-bottom: 10%;
+    }
     .foot_list ul {
         flex-direction: column;
         flex-wrap: wrap; 
-        width: max-content;
+        width: 80%;
+        margin: 0px;
+    }
+    .foot_list li{
+        padding: 1%;
     }
 
-}
+    .foot_list li:first-child{
+        margin-bottom: 0%;
+    }
