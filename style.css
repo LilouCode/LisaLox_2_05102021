@@ -1,10 +1,10 @@
-.body {
+body {
     font-family: 'Raleway', sans-serif;
     background-color: white;
 }
 
 /*      HEADER      */
-.header{
+header{
     margin-left: 20px;
     margin-right: 20px;
 }
