@@ -447,15 +447,14 @@ align-self: center;
 }
 
 
-/* FOOTER*/
+/*                                  FOOTER*/
 footer {
     background-color: #F2F2F2;
     padding-top: 10px;
     padding-bottom: 0px;
     clear: right;
     width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin:0px
 }
 
 .foot_container {
@@ -493,27 +492,32 @@ footer {
 }
 
 
-/* MEDIA QUERIES */
-/*Tablettes*/
+/************************************************ MEDIA QUERIES *********************************/
+/***********************************Tablettes*******************/
 
 @media all and (max-device-width: 992px) {
-    .body{
-        background-color: palevioletred;
-    }
 
     .menu {
-        width: 100%;
+        width: 100%
     }
-    
+    .menu img{
+        margin-left: 8%;
+    }
+
+    #Recherche{
+        margin-left: 4%;
+    }
     #Hébergements{
         flex-direction: column;
     }
     #HM{
         display: flex;
         flex-direction: column;
-        width: 70%;
+        width: 90%;
         margin: 0px;
+        margin-left: 3%;
         padding: 0px;
+        background-color: white;
     }
     .grille_hébergements{
         display: flex;
@@ -529,13 +533,82 @@ footer {
         display: flex;
         width: 100%;
         margin-left: 0px;
-        background-color: white;
+        background-color: #F2F2F2;
+    }
+    .titre_section_avec_icone{
+        width: 22%;
+    }
+    #Pop a{
+        width: 30%;
     }
     #grille_pop{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        margin-left: 5px;
+        justify-content: flex-start;
+    }
+    .grille_item_pop img{
+        border-top-left-radius: 57px;
+        border-bottom-left-radius: 171px;
+    }
+    .grille_item_pop img:hover{
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    /*ACTIVITES*/
+
+    .titre_section{
+        margin-top: 5%;
+        margin-bottom: 4%;
+    }
+    .Item_grid{
+        justify-content: flex-start;
+    }
+    .pic_item_act{
+        width: 200px;
+    }
+    .Item_act{
+        width: 200px;
+    }
+    .Item_act h4{
+        font-size: 12px;
+    }
+    .Item_act img{
+        width: 200px;
+    }
+    
+    #Vieux_port img{
+        height: 224px;
+    }
+
+    #Fort_de_Pomègues img{
+        height: 85px;
+    }
+
+    #Îles_du_Frioul img{
+        height: 70px;
+        object-position: top;
+    }
+
+    #Parc_National_des_Calanques img{
+        height: 224px;
+    }
+
+    #Notre_Dame_de_la_Garde img{
+        height: 70px;
+        object-position: top;
+    }
+
+    #Parc_Longchamps img{
+        height: 85px;
+    }
+
+    /*Footer*/
+
+    .footer{
+        margin: 0px;
+
     }
 
 }
@@ -544,7 +617,6 @@ footer {
 /*******************Smartphones************************************/ 
 
 @media all and (max-device-width: 768px) {
-
     .header{
         width: 100%;
         margin-left: 0%;
