@@ -69,6 +69,7 @@ body {
 #Recherche{
     display: flex;
     flex-direction: column;
+    margin-left: 1%;
 }
 .titre_section_recherche h2{
     margin-bottom: 5px;
@@ -450,26 +451,27 @@ align-self: center;
 /*                                  FOOTER*/
 footer {
     background-color: #F2F2F2;
-    padding-top: 10px;
+    padding-top: 1%;
     padding-bottom: 0px;
     clear: right;
     width: 100%;
-    margin:0px
+    margin-top: 3%;
 }
 
 .foot_container {
     display: flex;
     flex-wrap: wrap;
 }
-
+.foot_list{
+    margin-left: 2%;
+    width: 30%;
+}
 .foot_list ul{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
-    padding-left: 0%;
-    margin-left: 40px;
-    margin-right: 200px;    
+    padding-left: 0%;  
 }
 
 .foot_list li {
@@ -511,12 +513,13 @@ footer {
         flex-direction: column;
     }
     #HM{
+        order: 2;
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         margin: 0px;
-        margin-left: 3%;
-        padding: 0px;
+        padding: 2%;
+        border-radius: 0px;
         background-color: white;
     }
     .grille_hébergements{
@@ -528,8 +531,17 @@ footer {
         margin-left: 0%;
         margin-right: 3%;
     }
+    #button_more{
+        align-self: flex-start;
+        margin-top: 3%;
+        padding: 2%;
+        border-radius: 20px;
+        box-shadow: 2px 5px 2px #F2F2F2;
+        font-size: 12px;
+    }
 
     #Pop{
+        order: 1;
         display: flex;
         width: 100%;
         margin-left: 0px;
