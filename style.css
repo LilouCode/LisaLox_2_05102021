@@ -1,11 +1,9 @@
-body {
+.body {
     font-family: 'Raleway', sans-serif;
     background-color: white;
-    margin: 0px;
 }
 
 /*      HEADER      */
-
 .header{
     margin-left: 20px;
     margin-right: 20px;
@@ -497,7 +495,7 @@ footer {
 /************************************************ MEDIA QUERIES *********************************/
 /***********************************Tablettes*******************/
 
-@media all and (max-device-width: 992px) {
+@media all and (max-width: 992px) {
 
     .menu {
         width: 100%
@@ -628,7 +626,7 @@ footer {
 
 /*******************Smartphones************************************/ 
 
-@media all and (max-device-width: 768px) {
+@media all and (max-width: 768px) {
     .header{
         width: 100%;
         margin-left: 0%;
@@ -852,3 +850,4 @@ footer {
     .foot_list li:first-child{
         margin-bottom: 0%;
     }
+}
