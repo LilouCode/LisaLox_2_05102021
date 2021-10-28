@@ -699,6 +699,7 @@ footer {
     }
     .filtres{
         margin-left: 0%;
+        padding: 8px;
     }
     .filtre{
         margin-right: 2%;
