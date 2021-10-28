@@ -494,7 +494,7 @@ footer {
 /************************************************ MEDIA QUERIES *********************************/
 /***********************************Tablettes*******************/
 
-@media all and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
 
     .menu {
         width: 100%
