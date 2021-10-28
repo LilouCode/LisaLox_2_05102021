@@ -628,7 +628,10 @@ footer {
 /*******************Smartphones************************************/ 
 
 @media all and (max-width: 768px) {
-    .header{
+    body{
+        margin: 0%;
+    }
+    header{
         width: 100%;
         margin-left: 0%;
         margin-right: 0%;
@@ -639,11 +642,12 @@ footer {
     padding-inline-start: 0px;
     width: 100%;
     margin: 0%;
+    justify-content: space-between;
     }   
     .menu { 
         flex-direction: column;
         align-items: center;
-        margin: 2%;
+        margin: 0%;
     }
     .menu_item{
         width: 100%;
@@ -654,6 +658,8 @@ footer {
     .menu a{
         margin-left: 0px;
         margin-right: 0px;
+        width: 50%;
+        border-bottom: solid #f2f2f2;
     }
 
     .menu a:hover{
