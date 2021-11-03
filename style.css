@@ -202,11 +202,8 @@ main{
     margin-top: 0px;
 }
 
-/* SECTIONS Hébergements + Activités */
-.lien_card{
-    text-decoration: none;
-    color: black;
-}
+/********************************* SECTIONS Hébergements + Activités */
+
 
 /* SECTION HEBERGEMENTS + Paramètres grilles en Flexbox */ 
 
@@ -214,35 +211,40 @@ main{
     display: flex;
 }
 
-.box_section{
+
+.hm_box{
+    display: flex;
+    flex-direction: column;
+    flex: 65%;
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 2%;
-    height: fit-content;
 }
-
-#hm{
-    width: 65%;
+.hm_box a{
+    text-decoration: none;
+    color: black;
+    flex: 30%;
 }
-
 .grille_hebergements{
     display: flex;
     flex-wrap: wrap;
     margin-left: 0%;
     margin-right: 0%;
 }
+
 .grille_hebergements:first-child i{
 color: #F2F2F2;
 }
+
 
 .grille_item{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: white;
     border-radius: 25px;
     margin: 10px;
-    width: 230px;
+    flex:30%;
+    background-color: white;
     box-shadow: 1px 1px 12px #555;
 }
 
@@ -250,14 +252,13 @@ color: #F2F2F2;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover; /*pour garder le ratio*/
-    width: 220px;
     height: 100px;
-    align-self: center;
-    margin-top: 5px;
+    width: 96%;
+    margin: 2%;
 }
 .pic_item{
-width: 220px;
-align-self: center;
+    width: 100%;
+    align-self: center;
 }
 
 .infos_item{
@@ -310,7 +311,7 @@ align-self: center;
     font-size: 10px;
 }
 #button_more{
-    align-self: flex-end;
+    align-self: flex-start;
     border: none;
     padding: 2%;
     margin-top: 2%;
@@ -321,15 +322,28 @@ align-self: center;
 
 /* LES PLUS POPULAIRES*/
 
-#pop{
-    margin-left: 30px;
-    width: 32%;
-    height: max-content;
+.pop_box{
     display: flex;
     flex-direction: column;
+    margin-left: 30px;
+    flex: 32%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 1% 2% 1% 2%;
 }
-#pop a{
+.grille_hebergements_pop{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.pop_box a{
+    text-decoration: none;
+    color: black;
     width: 80%;
+    flex: 30% ;
+    align-self: center;
     margin-top: 1%;
 }
 
@@ -344,24 +358,23 @@ align-self: center;
 .grille_item_pop{
     display: flex;
     flex-direction: row;
-    background-color: white;
     border-radius: 25px;
-    margin: 3.4%;
-    width: 98%;
     padding-bottom: 2px;
+    background-color: white;
     box-shadow: 1px 1px 12px #555;
 }
 
 .pic_item_pop{
-    width: 120px;
+    width: 40%;
     height: 128px;
+    margin-right: 2%;
 }
 
 .grille_item_pop img{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     object-fit: cover; /*pour garder le ratio*/
-    width: 110px;
+    width: 100%;
     height: 120px;
     align-self: center;
     margin: 5px;
@@ -401,8 +414,11 @@ align-self: center;
     width: 100%;
 }
 
-#box_activites{
+.activites_box{
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
 }
 .grille_activites{
     display: flex;
@@ -410,7 +426,10 @@ align-self: center;
     justify-content: space-between;
     width: 100%;
 }
-
+.grille_activites a{
+    text-decoration: none;
+    color: black;
+}
 .item_act{
     display: flex;
     flex-direction: column;
@@ -445,7 +464,6 @@ align-self: center;
     align-items: center;
     align-content: space-between; 
     flex-wrap: wrap;
-    min-width: 20%;
 }
 
 #Vieux_port img{
@@ -526,40 +544,28 @@ footer {
 /***********************************Tablettes*******************/
 
 @media all and (max-width: 992px) {
-
     .menu {
         width: 100%
     }
     .menu img{
         margin-left: 8%;
     }
-
+    
     #recherche{
-        margin-left: 4%;
+        margin: 0%;
+        padding: 2%;
     }
     #hebergements{
         flex-direction: column;
     }
-    #hm{
+    .hm_box{
         order: 2;
         display: flex;
         flex-direction: column;
-        width: 96%;
-        margin: 0px;
-        margin-top: 2%;
-        padding: 2%;
-        border-radius: 20px;
-        background-color: white;
-        box-shadow: unset;
-    }
-    .grille_hebergements{
-        display: flex;
-        margin-left: 0px ;    
+        width: 96%;;
     }
     .grille_hebergements a{
-        width: 30%;
-        margin-left: 0%;
-        margin-right: 3%;
+        margin-right: 1%;
     }
     #button_more{
         align-self: flex-start;
@@ -568,36 +574,52 @@ footer {
         font-size: 12px;
     }
 
-    #pop{
+    .pop_box{
         order: 1;
-        display: flex;
-        width: 100%;
-        margin-left: 0px;
-        background-color: #F2F2F2;
+        width: 97%;
+        margin: unset;
+        background-color: white;
         border-radius: 0px;
     }
+
     .titre_section_avec_icone{
-        width: 22%;
-    }
-    #pop a{
-        width: 30%;
-    }
-    #grille_pop{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
         justify-content: flex-start;
+    }
+    .titre_section_avec_icone h2{
+        margin-bottom: 4%;
+        margin: 2%;
+    }
+    .pop_box a{
+        flex:30%;
+        padding: 1%;
+        margin: 1% 1% 1% 0%;
+    }
+
+    .grille_hebergements_pop{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .grille_item_pop{
+        flex-direction: column;
+    }
+    .grille_item_pop picture{
+        width: 96%;
     }
     .grille_item_pop img{
         border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
     }
-    .grille_item_pop img:hover{
-        border-top-left-radius: 57px;
-        border-bottom-left-radius: 171px;
+    .infos_item_pop {
+        width: 96%;
+        margin-left: 2%;
+    }
+    .infos_item_pop_text{
+        width: 100%;
     }
 
-    /*ACTIVITES*/
+    /*ACTIVITES - tablette*/
 
     .titre_section{
         margin-top: 5%;
@@ -645,7 +667,7 @@ footer {
         height: 85px;
     }
 
-    /*Footer*/
+    /*Footer - Tablette*/
 
     .footer{
         margin: 0px;
@@ -667,6 +689,12 @@ footer {
         margin-right: 0%;
         padding: 0%;
     }
+    
+    .menu { 
+        flex-direction: column;
+        align-items: center;
+        margin: 0%;
+    }
 
     .menu ul{
     padding-inline-start: 0px;
@@ -674,10 +702,9 @@ footer {
     margin: 0%;
     justify-content: space-between;
     }   
-    .menu { 
-        flex-direction: column;
-        align-items: center;
-        margin: 0%;
+    
+    .menu li{
+        flex: 50%;
     }
     .menu_item{
         width: 100%;
@@ -688,15 +715,15 @@ footer {
     .menu a{
         margin-left: 0px;
         margin-right: 0px;
-        width: 50%;
-        border-bottom: solid #f2f2f2;
+        border-bottom: 1px solid #f2f2f2;
     }
 
     .menu a:hover{
         border-top: none;
-        border-bottom: solid #0065FC;  
+        border-bottom: 1px solid #0065FC;
+        font-weight: normal;  
     }
-    
+   
     /***** section recherche mobile*/
     #recherche{
         margin: 4%;
@@ -710,7 +737,6 @@ footer {
     }
     .titre_section_recherche h6{
         font-size: 14px;
-        margin-left: -1%;
     }
 
     #form_standart{
@@ -751,89 +777,128 @@ footer {
     .info_recherche i{
         float: left;
     }
+    
+    /*FONT hébergements+ pop+ activités*/
+    .titre_item{
+        font-size: 16px;
+    }
+    .titre_section{
+        padding: 2%;
+        font-size: 21px;
+        font-weight: bold;
+    }
     /* section hébergements mobile */
 
     #hebergements{
         flex-direction: column;
-        width: 100%;
-        padding: 0%;
     }
 
-    #hm{
+    .hm_box{
         order: 2;
-        display: flex;
-        flex-direction: column;
-        width: 89%;
-        margin: 3%;
-        padding: 0px;
+        width: 90%;
         background-color: white;
     }
     .grille_hebergements{
-        display: flex;
-        flex-direction: column;
-        margin-left: 0px ;
-        align-self: center;   
+        flex-direction: column;; 
         width: 100%; 
     }
     .grille_hebergements a{
         width: 100%;
-        margin-left: 0%;
-        margin-right: 0%;
     }
     .grille_item{
         width: 100%;
     }
     .grille_item img{
-        width: 97%;
-        object-position: 10% 53%;
-    }
-    .pic_item{
-        width: 96%;
-        padding: 2%;
-    }
-    .grille_item img{
-        width: 100%;
-        margin-top: 0%;
+        width: 98%;
+        margin: 1%;
         height: 111px;
     }
-
+    .pic_item{
+        width: 100%;
+        margin: 0%;
+    }
     #button_more{
         align-self: flex-start;
+        font-size: 18px;
     }
-    #pop{
-        order: 1;
+    
+    .pop_box{
         display: flex;
-        width: 100%;
-        padding: 5%;
-        margin-left: 0px;
+        flex-direction: column;
         background-color: #F2F2F2;
         border-radius: 0px;
     }
-    .titre_section_avec_icone{
-        width: 80%;
-    }
-    #pop a{
-        width: 83%;
-    }
-    #grille_pop{
-        display: flex;
-        flex-wrap: wrap;
+
+    .grille_hebergements_pop{
         flex-direction: column;
-        width: 100%;
-        align-self: center;
+        justify-content: space-around;
     }
     
+    .pop_box a{
+        width: 90%;
+        flex: 30% ;
+        align-self: center;
+        margin-top: 1%;
+    }
+    
+    .titre_section_avec_icone{
+        justify-content: space-between;
+    }
+    
+    #icone_pop{
+        align-self: center;
+        padding-right: 3%;
+    }
+    .grille_item_pop{
+        flex-direction: row;
+        background-color: white;
+        padding-bottom: 2px;
+    }
+    
+    .pic_item_pop{
+        flex: 40%;
+        height: 128px;
+        margin-right: 2%;
+    }
+    
+    .grille_item_pop img{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        height: 120px;
+        align-self: center;
+        margin: 5px;
+    }
+    
+    .infos_item_pop{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 70%;
+        display: flex;
+        padding-left: 2%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .infos_item_pop_text{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
     /* section Activités mobile*/
 
     .grille_activites{
         flex-direction: column;
     }
     .item_grid{
-        flex-wrap: nowrap;
+        width: 90%;
+        align-self: center;
+
+    }
+    .lien_act{
         width: 100%;
     }
-    .lien_card{
-        width: 97%;
+    .item_act {
+        width: 100%;
     }
     .pic_item_act{
         width: 100%;
@@ -842,24 +907,33 @@ footer {
     .pic_item_act img{
         width: 100%;
     }
+
     #Vieux_port img{
         height: 111px;
     }
+
+    #Fort_de_Pomègues img{
+        height: 111px;
+    }
+
+    #Îles_du_Frioul img{
+        height: 111px;
+        object-position: top;
+    }
+
     #Parc_National_des_Calanques img{
         height: 111px;
     }
-    #Fort_de_Pomègues img {
-        height: 111px;
-    }
-    #Îles_du_Frioul img{
-        height: 111px;
-    }
+
     #Notre_Dame_de_la_Garde img{
         height: 111px;
+        object-position: top;
     }
-    #Parc_Longchamps img {
+
+    #Parc_Longchamps img{
         height: 111px;
     }
+    
     /*footer mobile*/
     .footer {
         margin-left: 0px !important;
