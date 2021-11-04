@@ -210,8 +210,6 @@ main{
 .grille_hebergements{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 0%;
-    margin-right: 0%;
 }
 
 .grille_hebergements:first-child i{
@@ -222,9 +220,9 @@ color: #F2F2F2;
 .grille_item{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     border-radius: 25px;
-    margin: 10px;
+    margin: 5%;
     flex:30%;
     background-color: white;
     box-shadow: 1px 1px 12px #555;
@@ -676,35 +674,37 @@ footer {
     .menu { 
         flex-direction: column;
         align-items: center;
-        margin: 0%;
+        margin-bottom: 0%;
     }
 
     .menu ul{
     padding-inline-start: 0px;
-    width: 100%;
-    margin: 0%;
+    margin: 7% 0 0 0;
     justify-content: space-between;
     }   
     
     .menu li{
         flex: 50%;
     }
+    
     .menu_item{
         width: 100%;
     }
+
     #pic_logo{
         width: auto;
     }
     .menu a{
         margin-left: 0px;
         margin-right: 0px;
-        border-bottom: 1px solid #f2f2f2;
+        padding: 5%;
+        border-bottom: 3px solid #f2f2f2;
     }
 
     .menu a:hover{
-        border-top: none;
-        border-bottom: 1px solid #0065FC;
-        font-weight: normal;  
+        border-top: solid transparent;
+        border-bottom: 3px solid #0065FC;
+        font-weight: normal;
     }
    
     /***** section recherche mobile*/
