@@ -430,14 +430,14 @@ color: #F2F2F2;
 } 
 
 .item_act h4{
-    padding: 14px;
+    padding: 5%;
     margin-top: 0px;
     font-size: 13px;
     font-weight: bold;
 }
 
 .item_grid:first-child{
-    margin-left: 0px;
+    margin-left: 0%;
 }
 .item_grid{
     display: flex;
