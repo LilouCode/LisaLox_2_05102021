@@ -602,8 +602,8 @@ footer {
     margin-bottom: 4%;
   }
 
-  .item-grid{
-    flex:40%;
+  .item-grid {
+    flex: 40%;
     margin-left: 0;
     margin-right: 2%;
   }
@@ -670,7 +670,7 @@ footer {
     padding: 0%;
   }
 
-  main{
+  main {
     padding: 0%;
     margin: 0%;
   }
@@ -714,7 +714,7 @@ footer {
   }
 
   /***** section recherche mobile*/
-  #recherche{
+  #recherche {
     padding: 2% 5%;
   }
   .titre-section {
@@ -806,7 +806,7 @@ footer {
     margin: 5% 0;
     padding: 0;
   }
-  .hm-box h2{
+  .hm-box h2 {
     padding: 1% 7%;
   }
   .grille-hebergements {
@@ -905,7 +905,7 @@ footer {
     width: 90%;
     align-self: center;
   }
-  .item-grid h4{
+  .item-grid h4 {
     font-size: 16px;
     padding: 5%;
   }
@@ -952,8 +952,8 @@ footer {
 
   /*footer mobile*/
   .footer {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .foot-container {
     flex-direction: column;
