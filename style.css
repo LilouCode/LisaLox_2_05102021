@@ -11,6 +11,7 @@ header {
   padding-left: 2%;
   padding-right: 2%;
 }
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -669,6 +670,11 @@ footer {
     padding: 0%;
   }
 
+  main{
+    padding: 0%;
+    margin: 0%;
+  }
+
   .menu {
     flex-direction: column;
     align-items: center;
@@ -708,6 +714,9 @@ footer {
   }
 
   /***** section recherche mobile*/
+  #recherche{
+    padding: 2% 5%;
+  }
   .titre_section {
     width: 80%;
   }
@@ -794,6 +803,11 @@ footer {
     order: 2;
     width: 90%;
     background-color: white;
+    margin: 5% 0;
+    padding: 0;
+  }
+  .hm_box h2{
+    padding: 1% 7%;
   }
   .grille_hebergements {
     flex-direction: column;
@@ -808,7 +822,7 @@ footer {
   .grille_item img {
     width: 98%;
     margin: 1%;
-    height: 111px;
+    height: 140px;
   }
   .pic_item {
     width: 100%;
@@ -824,6 +838,7 @@ footer {
     flex-direction: column;
     background-color: #f2f2f2;
     border-radius: 0px;
+    width: 94%;
   }
 
   .grille_hebergements_pop {
@@ -890,6 +905,11 @@ footer {
     width: 90%;
     align-self: center;
   }
+  .item_grid h4{
+    font-size: 16px;
+    padding: 5%;
+  }
+
   .lien_act {
     width: 100%;
   }
@@ -905,29 +925,29 @@ footer {
   }
 
   #Vieux_port img {
-    height: 111px;
+    height: 140px;
   }
 
   #Fort_de_Pomègues img {
-    height: 111px;
+    height: 140px;
   }
 
   #Îles_du_Frioul img {
-    height: 111px;
+    height: 140px;
     object-position: top;
   }
 
   #Parc_National_des_Calanques img {
-    height: 111px;
+    height: 140px;
   }
 
   #Notre_Dame_de_la_Garde img {
-    height: 111px;
+    height: 140px;
     object-position: top;
   }
 
   #Parc_Longchamps img {
-    height: 111px;
+    height: 140px;
   }
 
   /*footer mobile*/
