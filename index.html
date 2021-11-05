@@ -8,18 +8,19 @@
     <title>Booki - Trouvez votre hébergement à Marseille</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+
     <script src="https://kit.fontawesome.com/92571ff0d6.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <header>
       <div class="menu">
-        <picture class="pic-logo" class="menu-item">
+        <picture id="pic_logo" class="menu_item">
           <source srcset="images/logo-booki_gauche.png" media="(min-width:768px)" />
           <img src="images/logo-booki-centrer.png" alt="Logo Booki" />
         </picture>
 
-        <nav class="menu-item">
+        <nav class="menu_item">
           <ul>
             <li>
               <a href="#hebergements">Hébergements</a>
@@ -40,7 +41,7 @@
         </div>
 
         <form method="post" action="traitement.php" class="recherche">
-          <div class="form" class="form_standart">
+          <div class="form" id="form_standart">
             <i class="fas fa-map-marker-alt"></i>
             <input class="text_form" type="text" value="Marseille, France" />
             <input class="item_form" type="submit" id="click_rechercher" value="Rechercher" />
@@ -48,7 +49,7 @@
         </form>
 
         <form method="post" action="traitement.php" class="recherche">
-          <div class="form" class="form_mobile">
+          <div class="form" id="form_mobile">
             <i class="fas fa-map-marker-alt"></i>
             <input class="text_form" type="text" value="Marseille, France" />
             <i id="loupe" class="fas fa-search"></i>
@@ -203,7 +204,7 @@
               </div>
             </a>
           </div>
-          <button class="button-more">Afficher plus</button>
+          <button id="button_more">Afficher plus</button>
         </div>
 
         <div class="pop_box">
